@@ -1,0 +1,56 @@
+/* index.css or main.css */
+
+@import "flyonui/variants.css";
+
+/* Optional: Add any custom styles below */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* If you want FlyonUI styles, import after Tailwind */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@plugin "flyonui";
+@source "./node_modules/flyonui/flyonui.js";
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+  /* Hide scrollbar but allow scroll */
+  .hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+
+  .swiper-button-next,
+.swiper-button-prev {
+  color: black; /* arrow color */
+  font-size: 14px;
+  width: 32px !important;
+  height: 50px !important;
+  background-color: rgba(255, 255, 255, 0.54);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px !important; 
+  font-weight: 100 !important;
+  color: rgb(68, 62, 62);
+}
