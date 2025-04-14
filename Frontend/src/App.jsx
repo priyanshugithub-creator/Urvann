@@ -28,7 +28,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:category" element={<FloweringPlants />} />
-        
         <Route path="/collection/:sale" element={<Sale />} />
         <Route path="/product/:details" element={<ProductDetails />} />
         <Route path="/login" element={<Login />} />
@@ -38,7 +37,6 @@ function App() {
         <Route path="/search" element={<SearchResult />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/help" element={<Help />} />
-
         <Route
           path="/cart"
           element={
